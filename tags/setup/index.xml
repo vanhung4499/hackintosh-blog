@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>setup on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/setup/</link>
+    <description>Recent content in setup on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC</title>
+      <link>https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/</guid>
+      <description>Cấu trúc bios utility của mỗi hãng sẽ khác nhau nên mình sẽ chia theo hãng, đối với các main cùng hãng thì đời cũ và đời mới nó cũng không giống nhau hoàn toàn. Trong bài viết này mình chỉ viết hướng dẫn cho các main mới hơn cụ thể là main đi với CPU Intel đầu 6 trở đi.
+Main Gigabyte Setup chung  Save &amp;amp; Exit → Load Optimized Defaults M.</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt hackintosh vào máy</title>
+      <link>https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/</guid>
+      <description>Hiện tại máy mình đã xóa windows và cái điện thoại xiaomi cùi bắp chụp ảnh không tốt lắm nên mình sẽ lấy ảnh từ nguồn ngoài hoặc không có ảnh để hướng dẫn chi tiết.
+Chuẩn bị phân vùng ổ cứng cài đặt macOS Hãy backup dữ liệu, vì sẽ phải format ổ cứng hoăc phân chia phân vùng ổ cứng. Cũng có thể sẽ phải cài lại win.</description>
+    </item>
+    
+    <item>
+      <title>Setup Bios cho Hackintosh</title>
+      <link>https://vnohackintosh.com/blog/2019/04/21/setup-bios-cho-hackintosh/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/21/setup-bios-cho-hackintosh/</guid>
+      <description>Vì có quá nhiều hãng máy và main nên mình không thể làm cụ thể từng loại bios được. Bạn cần tìm và chỉnh sửa một số mục sau trong bios:
+Đối với PC  XHCI Handoff: Enabled (nếu có, một số main sẽ không có lựa chọn này) OS Type: Other (nếu có) Secure Boot: Disabled (nếu không thấy đâu thì sẽ thấy cái OS Type bên trên chỉnh nó về other là được) Legacy/CSM support: Enable [Nhiều main tắt cũng được nhưng nhiều main tắt thì boot màn hình sẽ bị lỗi, bật cho chắc] Fast Boot: Disable SATA Mode: AHCI VT-d: Disable Nếu bạn dùng Nvidia/AMD GPU:  KHÔNG kết nối màn hình với các cổng DP/HDMI/VGA/DVI trên main.</description>
+    </item>
+    
+  </channel>
+</rss>

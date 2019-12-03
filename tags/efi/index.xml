@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>efi on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/efi/</link>
+    <description>Recent content in efi on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/efi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cài đặt Clover vào ổ cứng</title>
+      <link>https://vnohackintosh.com/blog/2019/04/24/cai-dat-clover-vao-o-cung/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/24/cai-dat-clover-vao-o-cung/</guid>
+      <description>Phần này mình sẽ hướng dẫn cài và tinh chỉnh clover lên ổ cứng để bạn không cần usb mồi nữa. Đối với PC thì làm đến này là đã có thể dùng ổn định. Còn laptop thì vẫn còn một chặng đường dài nữa.
+Vô hiệu hóa Gatekeeper Mở Terminal lên và chạy lệnh sau và nhập password:
+sudo spctl --master-disable  Chạy lệnh trên để mở khóa cho phép cài đặt phần mềm bên thứ ba vào macOS.</description>
+    </item>
+    
+  </channel>
+</rss>

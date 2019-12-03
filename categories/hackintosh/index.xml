@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hackintosh on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/categories/hackintosh/</link>
+    <description>Recent content in hackintosh on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/categories/hackintosh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quy trình cài đặt Hackintosh dành cho người mới</title>
+      <link>https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/</guid>
+      <description>Hãy hình dung trước khi bước Nếu bạn mới đến với hackintosh hãy đọc bài viết này để tránh rối, blog của mình cũng đã có khá nhiều bài viết nên sẽ bạn sẽ không biết đọc thế nào.
+Quy trình cài hackintosh cơ bản:  Backup dữ liệu
+ Bạn tự chịu trách nhiệm với dữ liệu trong ổ cứng, lúc cài sẽ phải xoá ổ cứng.  Xác định phần cứng</description>
+    </item>
+    
+    <item>
+      <title>Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC</title>
+      <link>https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/</guid>
+      <description>Cấu trúc bios utility của mỗi hãng sẽ khác nhau nên mình sẽ chia theo hãng, đối với các main cùng hãng thì đời cũ và đời mới nó cũng không giống nhau hoàn toàn. Trong bài viết này mình chỉ viết hướng dẫn cho các main mới hơn cụ thể là main đi với CPU Intel đầu 6 trở đi.
+Main Gigabyte Setup chung  Save &amp;amp; Exit → Load Optimized Defaults M.</description>
+    </item>
+    
+    <item>
+      <title>Tạo bộ cài hackintosh dễ dàng nhất trên Windows</title>
+      <link>https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/</guid>
+      <description>Giới thiệu  Nói sơ qua về bộ cài cách cài thì mình dựa theo cách làm của Olarila để làm ra file disk image của một cái usb cài vanilla hackintosh. Bộ cài đã có sẵn clover bao gồm config, driver và kext cơ bản để có thể cài đặt do mình tự chỉnh sửa và được đảm bảo sẽ tương thích với phiên bản macOS đi kèm. Bộ cài này có thể được dùng trực tiếp trên cả macOS lẫn Windows.</description>
+    </item>
+    
+    <item>
+      <title>Cài Web Driver cho card rời NVIDIA</title>
+      <link>https://vnohackintosh.com/blog/2019/05/04/cai-web-driver-cho-card-roi-nvidia/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/05/04/cai-web-driver-cho-card-roi-nvidia/</guid>
+      <description>Giới thiệu  Đối với những máy dùng card rời NVIDIA dòng Maxwell và Pascal thì lúc mới cài máy sẽ chưa nhận card và sẽ rất lag, cần phải cài web driver vào thì máy mới nhận card rời. Cụ thể thì là những card sau  NVIDIA Pascal: GeForce GTX 1030, 1050, 1050 Ti, 1060, 1070, 1070 Ti, 1080, 1080 Ti, TITAN Pascal và TITAN Xp NVIDIA Maxwell: GeForce GTX 750, 750 Ti, 950, 960, 970, 980, 980 Ti, and TITAN X  Dòng card NVIDIA RTX mới ra hiện chưa có web driver nên chưa thể dùng cho hackintosh.</description>
+    </item>
+    
+    <item>
+      <title>Kích hoạt âm thanh trong hackintosh với AppleALC</title>
+      <link>https://vnohackintosh.com/blog/2019/04/30/giai-phap-am-thanh-trong-hackintosh-voi-applealc/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/30/giai-phap-am-thanh-trong-hackintosh-voi-applealc/</guid>
+      <description>Chuẩn bị  Lilu: https://github.com/acidanthera/Lilu/releases AppleALC: https://github.com/acidanthera/AppleALC/releases Clover Configurator: https://mackie100projects.altervista.org/download-clover-configurator/ Copy hai kext trên đến thư mục EFI/CLOVER/kexts/Other Đảm bảo chưa thay đổi, động chạm gì đến kext AppleHDA gốc  Cơ chế hoạt động AppleALC là một kho database lớn gồm các layout, platform hỗ trợ rất nhiều loại codec. AppleALC là mã nguồn mở cho phép mọi người có thể đóng góp. Hiện tại AppleALC đã support đa số codec-id có trên thị trường và nhờ sự đóng góp của cộng thì nó lại càng lớn mạnh.</description>
+    </item>
+    
+    <item>
+      <title>Boot mặc định vào Clover</title>
+      <link>https://vnohackintosh.com/blog/2019/04/29/boot-mac-dinh-vao-clover/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/29/boot-mac-dinh-vao-clover/</guid>
+      <description>Tùy vào main mà việc boot vào clover sẽ có độ khó khăn khác nhau.
+Sẽ có các cách sau đây theo thứ tự từ dễ tới phức tạp.
+Boot từ BOOTX64.efi Hệ thống UEFI sẽ tự tìm các file đuôi .efi và chứa boot loader để chạy. Mặc định nếu bạn chọn boot option là ổ cứng nào đó thì hệ thống sẽ boot từ file EFI/BOOT/BOOTX64.efi .</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt Clover vào ổ cứng</title>
+      <link>https://vnohackintosh.com/blog/2019/04/24/cai-dat-clover-vao-o-cung/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/24/cai-dat-clover-vao-o-cung/</guid>
+      <description>Phần này mình sẽ hướng dẫn cài và tinh chỉnh clover lên ổ cứng để bạn không cần usb mồi nữa. Đối với PC thì làm đến này là đã có thể dùng ổn định. Còn laptop thì vẫn còn một chặng đường dài nữa.
+Vô hiệu hóa Gatekeeper Mở Terminal lên và chạy lệnh sau và nhập password:
+sudo spctl --master-disable  Chạy lệnh trên để mở khóa cho phép cài đặt phần mềm bên thứ ba vào macOS.</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt hackintosh vào máy</title>
+      <link>https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/</guid>
+      <description>Hiện tại máy mình đã xóa windows và cái điện thoại xiaomi cùi bắp chụp ảnh không tốt lắm nên mình sẽ lấy ảnh từ nguồn ngoài hoặc không có ảnh để hướng dẫn chi tiết.
+Chuẩn bị phân vùng ổ cứng cài đặt macOS Hãy backup dữ liệu, vì sẽ phải format ổ cứng hoăc phân chia phân vùng ổ cứng. Cũng có thể sẽ phải cài lại win.</description>
+    </item>
+    
+    <item>
+      <title>Setup Bios cho Hackintosh</title>
+      <link>https://vnohackintosh.com/blog/2019/04/21/setup-bios-cho-hackintosh/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/21/setup-bios-cho-hackintosh/</guid>
+      <description>Vì có quá nhiều hãng máy và main nên mình không thể làm cụ thể từng loại bios được. Bạn cần tìm và chỉnh sửa một số mục sau trong bios:
+Đối với PC  XHCI Handoff: Enabled (nếu có, một số main sẽ không có lựa chọn này) OS Type: Other (nếu có) Secure Boot: Disabled (nếu không thấy đâu thì sẽ thấy cái OS Type bên trên chỉnh nó về other là được) Legacy/CSM support: Enable [Nhiều main tắt cũng được nhưng nhiều main tắt thì boot màn hình sẽ bị lỗi, bật cho chắc] Fast Boot: Disable SATA Mode: AHCI VT-d: Disable Nếu bạn dùng Nvidia/AMD GPU:  KHÔNG kết nối màn hình với các cổng DP/HDMI/VGA/DVI trên main.</description>
+    </item>
+    
+    <item>
+      <title>Tạo usb cài đặt hackintosh trên macOS</title>
+      <link>https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/</guid>
+      <description>Bạn sẽ cần macOS để thực hiện tạo usb vanilla hackintosh. Ngoài ra vẫn có cách khác để tạo usb vanilla mà không cần đến macOS nhưng mà để hiểu và ít lỗi xảy ra hãy làm theo cách này. Những cách khác mình sẽ viết sau.
+Chuẩn bị bộ cài, USB  Bộ cài macOS gốc tải từ App Store:  High Sierra 10.13.6 Mojave mới nhất  Thường thì tải từ App Store rất chậm ở Việt Nam, bạn có thể tham khảo thêm một số nguồn bộ cài bên ngoài nhưng có thể gây lỗi.</description>
+    </item>
+    
+    <item>
+      <title>Tạo máy ảo macOS trên Windows</title>
+      <link>https://vnohackintosh.com/blog/2019/04/19/tao-may-ao-mac-os/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/19/tao-may-ao-mac-os/</guid>
+      <description>Tạo máy ảo để bạn có thể tạo bộ cài hackintosh và trải nghiệm qua macOS và quá trình cài. Lúc cài hackintosh cũng sẽ tương tự như cài máy ảo nhưng mà về mặt trải nghiệm thì hackintosh sẽ hơn hẳn máy ảo. Nếu bạn có real mac hay máy hackintosh khác thì hãy bỏ qua bài này.
+Trên internet đã có nhiều bài viết, video hướng dẫn tạo máy ảo macOS rồi nên mình xin trích dẫn bài viết của anh DuongTH (một người có rất nhiều kinh nghiệm về hackintosh).</description>
+    </item>
+    
+    <item>
+      <title>Kiểm tra phần cứng của máy</title>
+      <link>https://vnohackintosh.com/blog/2019/04/18/kiem-tra-phan-cung/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/18/kiem-tra-phan-cung/</guid>
+      <description>Cần phải biết chi tiết phần cứng của máy trước khi cài. Bạn cần thu thập đủ thông tin cấu hình để tìm kext và patch phù hợp. Nếu đi hỏi người khác thì nêu cấu hình để support nhanh, tránh làm mất thời gian.
+Phần mềm sử dụng sẽ là AIDA64 Extreme. Tải bản zip là portable thì sẽ không phải cài đặt.
+Tạo báo cáo cấu hình cho cài dịch vụ Nếu cài dịch vụ thì bạn cần gửi file report này lại cho mình</description>
+    </item>
+    
+    <item>
+      <title>Chuẩn bị kiến thức cơ bản</title>
+      <link>https://vnohackintosh.com/blog/2019/04/16/chuan-bi-kien-thuc/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/16/chuan-bi-kien-thuc/</guid>
+      <description>Để có thể tự cài đặt hackintosh bạn cần phải có kiến thức cơ bản về máy tính, ít nhất bạn nên biết cài win uefi. Trong blog này mình sẽ chỉ nói về cài hackintosh chuẩn uefi-gpt mà thôi, không hỗ trợ legacy, không hỗ trợ phần cứng đã quá cũ. Bạn nào biết rồi thì có thể bỏ qua đọc bài viết khác.
+Hỏi Google Nếu không biết hỏi Google thì bạn nên dừng lại!</description>
+    </item>
+    
+    <item>
+      <title>Cấu hình nào để cài hackintosh?</title>
+      <link>https://vnohackintosh.com/blog/2019/04/15/tuong-thich-phan-cung/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/15/tuong-thich-phan-cung/</guid>
+      <description>Mở đầu Bài viết này sẽ giúp bạn trả lời cho một số câu hỏi như sau, các bạn cần có những kiến thức cơ bản về phần cứng máy tính để có thể hiểu bài này: - PC hoặc laptop cấu hình ABCXYZ thế này có cài được hackintosh không? Cài bản nào tối ưu nhất? - Card wifi nào support hackintosh tốt? - Mua usb wifi/bluetooth nào support Hackintosh?</description>
+    </item>
+    
+    <item>
+      <title>Hackintosh là gì? Cài dễ không?</title>
+      <link>https://vnohackintosh.com/blog/2019/04/13/gioi-thieu-hackintosh/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/13/gioi-thieu-hackintosh/</guid>
+      <description>Hackintosh là gì? Hackintosh là hệ thống macOS chạy trên phần cứng không phải của Apple. Hiểu đơn giản là bạn cài macOS lên cái pc hay laptop của bạn thì nó gọi là Hackintosh. Nếu bạn bỏ công sức ra tìm hiểu và cài đặt tốt thì Hackintosh hoàn toàn có thể có được sự mượt mà và ổn định như real mac.
+Đây là bộ pc của mình đang chạy hackintosh chạy macOS mới nhất.</description>
+    </item>
+    
+  </channel>
+</rss>

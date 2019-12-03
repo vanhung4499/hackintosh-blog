@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>audio on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/audio/</link>
+    <description>Recent content in audio on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kích hoạt âm thanh trong hackintosh với AppleALC</title>
+      <link>https://vnohackintosh.com/blog/2019/04/30/giai-phap-am-thanh-trong-hackintosh-voi-applealc/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/30/giai-phap-am-thanh-trong-hackintosh-voi-applealc/</guid>
+      <description>Chuẩn bị  Lilu: https://github.com/acidanthera/Lilu/releases AppleALC: https://github.com/acidanthera/AppleALC/releases Clover Configurator: https://mackie100projects.altervista.org/download-clover-configurator/ Copy hai kext trên đến thư mục EFI/CLOVER/kexts/Other Đảm bảo chưa thay đổi, động chạm gì đến kext AppleHDA gốc  Cơ chế hoạt động AppleALC là một kho database lớn gồm các layout, platform hỗ trợ rất nhiều loại codec. AppleALC là mã nguồn mở cho phép mọi người có thể đóng góp. Hiện tại AppleALC đã support đa số codec-id có trên thị trường và nhờ sự đóng góp của cộng thì nó lại càng lớn mạnh.</description>
+    </item>
+    
+  </channel>
+</rss>

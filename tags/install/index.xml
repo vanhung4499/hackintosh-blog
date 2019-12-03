@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>install on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/install/</link>
+    <description>Recent content in install on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quy trình cài đặt Hackintosh dành cho người mới</title>
+      <link>https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/</guid>
+      <description>Hãy hình dung trước khi bước Nếu bạn mới đến với hackintosh hãy đọc bài viết này để tránh rối, blog của mình cũng đã có khá nhiều bài viết nên sẽ bạn sẽ không biết đọc thế nào.
+Quy trình cài hackintosh cơ bản:  Backup dữ liệu
+ Bạn tự chịu trách nhiệm với dữ liệu trong ổ cứng, lúc cài sẽ phải xoá ổ cứng.  Xác định phần cứng</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt Clover vào ổ cứng</title>
+      <link>https://vnohackintosh.com/blog/2019/04/24/cai-dat-clover-vao-o-cung/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/24/cai-dat-clover-vao-o-cung/</guid>
+      <description>Phần này mình sẽ hướng dẫn cài và tinh chỉnh clover lên ổ cứng để bạn không cần usb mồi nữa. Đối với PC thì làm đến này là đã có thể dùng ổn định. Còn laptop thì vẫn còn một chặng đường dài nữa.
+Vô hiệu hóa Gatekeeper Mở Terminal lên và chạy lệnh sau và nhập password:
+sudo spctl --master-disable  Chạy lệnh trên để mở khóa cho phép cài đặt phần mềm bên thứ ba vào macOS.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aida64 on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/aida64/</link>
+    <description>Recent content in aida64 on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/aida64/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kiểm tra phần cứng của máy</title>
+      <link>https://vnohackintosh.com/blog/2019/04/18/kiem-tra-phan-cung/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/18/kiem-tra-phan-cung/</guid>
+      <description>Cần phải biết chi tiết phần cứng của máy trước khi cài. Bạn cần thu thập đủ thông tin cấu hình để tìm kext và patch phù hợp. Nếu đi hỏi người khác thì nêu cấu hình để support nhanh, tránh làm mất thời gian.
+Phần mềm sử dụng sẽ là AIDA64 Extreme. Tải bản zip là portable thì sẽ không phải cài đặt.
+Tạo báo cáo cấu hình cho cài dịch vụ Nếu cài dịch vụ thì bạn cần gửi file report này lại cho mình</description>
+    </item>
+    
+  </channel>
+</rss>

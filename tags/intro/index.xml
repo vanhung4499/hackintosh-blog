@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intro on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/intro/</link>
+    <description>Recent content in intro on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tạo bộ cài hackintosh dễ dàng nhất trên Windows</title>
+      <link>https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/</guid>
+      <description>Giới thiệu  Nói sơ qua về bộ cài cách cài thì mình dựa theo cách làm của Olarila để làm ra file disk image của một cái usb cài vanilla hackintosh. Bộ cài đã có sẵn clover bao gồm config, driver và kext cơ bản để có thể cài đặt do mình tự chỉnh sửa và được đảm bảo sẽ tương thích với phiên bản macOS đi kèm. Bộ cài này có thể được dùng trực tiếp trên cả macOS lẫn Windows.</description>
+    </item>
+    
+    <item>
+      <title>Hackintosh là gì? Cài dễ không?</title>
+      <link>https://vnohackintosh.com/blog/2019/04/13/gioi-thieu-hackintosh/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/13/gioi-thieu-hackintosh/</guid>
+      <description>Hackintosh là gì? Hackintosh là hệ thống macOS chạy trên phần cứng không phải của Apple. Hiểu đơn giản là bạn cài macOS lên cái pc hay laptop của bạn thì nó gọi là Hackintosh. Nếu bạn bỏ công sức ra tìm hiểu và cài đặt tốt thì Hackintosh hoàn toàn có thể có được sự mượt mà và ổn định như real mac.
+Đây là bộ pc của mình đang chạy hackintosh chạy macOS mới nhất.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boot on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/boot/</link>
+    <description>Recent content in boot on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/boot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boot mặc định vào Clover</title>
+      <link>https://vnohackintosh.com/blog/2019/04/29/boot-mac-dinh-vao-clover/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/29/boot-mac-dinh-vao-clover/</guid>
+      <description>Tùy vào main mà việc boot vào clover sẽ có độ khó khăn khác nhau.
+Sẽ có các cách sau đây theo thứ tự từ dễ tới phức tạp.
+Boot từ BOOTX64.efi Hệ thống UEFI sẽ tự tìm các file đuôi .efi và chứa boot loader để chạy. Mặc định nếu bạn chọn boot option là ổ cứng nào đó thì hệ thống sẽ boot từ file EFI/BOOT/BOOTX64.efi .</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt hackintosh vào máy</title>
+      <link>https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/</guid>
+      <description>Hiện tại máy mình đã xóa windows và cái điện thoại xiaomi cùi bắp chụp ảnh không tốt lắm nên mình sẽ lấy ảnh từ nguồn ngoài hoặc không có ảnh để hướng dẫn chi tiết.
+Chuẩn bị phân vùng ổ cứng cài đặt macOS Hãy backup dữ liệu, vì sẽ phải format ổ cứng hoăc phân chia phân vùng ổ cứng. Cũng có thể sẽ phải cài lại win.</description>
+    </item>
+    
+    <item>
+      <title>Tạo usb cài đặt hackintosh trên macOS</title>
+      <link>https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/</guid>
+      <description>Bạn sẽ cần macOS để thực hiện tạo usb vanilla hackintosh. Ngoài ra vẫn có cách khác để tạo usb vanilla mà không cần đến macOS nhưng mà để hiểu và ít lỗi xảy ra hãy làm theo cách này. Những cách khác mình sẽ viết sau.
+Chuẩn bị bộ cài, USB  Bộ cài macOS gốc tải từ App Store:  High Sierra 10.13.6 Mojave mới nhất  Thường thì tải từ App Store rất chậm ở Việt Nam, bạn có thể tham khảo thêm một số nguồn bộ cài bên ngoài nhưng có thể gây lỗi.</description>
+    </item>
+    
+  </channel>
+</rss>

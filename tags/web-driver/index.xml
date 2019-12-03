@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web driver on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/web-driver/</link>
+    <description>Recent content in web driver on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/web-driver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cài Web Driver cho card rời NVIDIA</title>
+      <link>https://vnohackintosh.com/blog/2019/05/04/cai-web-driver-cho-card-roi-nvidia/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/05/04/cai-web-driver-cho-card-roi-nvidia/</guid>
+      <description>Giới thiệu  Đối với những máy dùng card rời NVIDIA dòng Maxwell và Pascal thì lúc mới cài máy sẽ chưa nhận card và sẽ rất lag, cần phải cài web driver vào thì máy mới nhận card rời. Cụ thể thì là những card sau  NVIDIA Pascal: GeForce GTX 1030, 1050, 1050 Ti, 1060, 1070, 1070 Ti, 1080, 1080 Ti, TITAN Pascal và TITAN Xp NVIDIA Maxwell: GeForce GTX 750, 750 Ti, 950, 960, 970, 980, 980 Ti, and TITAN X  Dòng card NVIDIA RTX mới ra hiện chưa có web driver nên chưa thể dùng cho hackintosh.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Cài đặt hackintosh vào máy</title>
+  <meta name="author" content="vanhung4499" />
+  
+  
+  
+  
+  <meta name="keywords" content="vanhung4499, hackintosh, macOS, setup, boot">
+  
+  
+  <meta name="description" content="Dịch vụ và chia sẻ hackintosh">
+
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.turquoise.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="https://vnohackintosh.com/index.xml" type="application/rss+xml" title="VNOHackintosh">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="VNOHackintosh">
+  <meta property="og:title" content="Cài đặt hackintosh vào máy">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vnohackintosh.com/blog/2019/04/22/cai-dat-hackintosh-vao-may/" />
+  <meta property="og:description" content="Dịch vụ và chia sẻ hackintosh">
+  <meta property="og:image" content="https://vnohackintosh.com/img/banners/hackintosh-pc3.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="939">
+    <meta property="og:image:height" content="716">
+  
+  
+  <meta property="og:updated_time" content="2019-04-22T00:00:00Z">
+  
+    <meta property="article:publisher" content="https://www.facebook.com/https://www.facebook.com/vnohackintosh/">
+    <meta property="article:author" content="https://www.facebook.com/Nguyen Van Hung/">
+    <meta property="article:section" content="hackintosh">
+    <meta property="article:tag" content="hackintosh">
+    <meta property="article:tag" content="setup">
+    <meta property="article:tag" content="boot">
+    
+    
+    <meta property="article:published_time" content="2019-04-22T00:00:00Z">
+    <meta property="article:modified_time" content="2019-04-22T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:title" content="Cài đặt hackintosh vào máy">
+  
+  <meta name="twitter:image" content="https://vnohackintosh.com/img/banners/hackintosh-pc3.png">
+  
+  <meta name="twitter:description" content="Dịch vụ và chia sẻ hackintosh">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="https://vnohackintosh.com">
+                    
+                    
+                    <span class="sr-only">Cài đặt hackintosh vào máy - về trang chủ</span>
+                    <h1 class="logo-text">VNOHackintosh</h1>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown active">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Liên hệ</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Cài đặt hackintosh vào máy</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">April 22, 2019</p>
+
+                        <div id="post-content">
+                          
+
+<p>Hiện tại máy mình đã xóa windows và cái điện thoại xiaomi cùi bắp chụp ảnh không tốt lắm nên mình sẽ lấy ảnh từ nguồn ngoài hoặc không có ảnh để hướng dẫn chi tiết.</p>
+
+<h2 id="chuẩn-bị-phân-vùng-ổ-cứng-cài-đặt-macos">Chuẩn bị phân vùng ổ cứng cài đặt macOS</h2>
+
+<p><strong>Hãy backup dữ liệu</strong>, vì sẽ phải format ổ cứng hoăc phân chia phân vùng ổ cứng. Cũng có thể sẽ phải cài lại win. Bạn phải tự trách nhiệm với dữ liệu của bạn.</p>
+
+<p><strong>Lưu ý:</strong> macOS không có khái niệm format mà chỉ có erase, mình sẽ nói là xóa ổ cứng, xóa phân vùng.</p>
+
+<p>Mình sẽ chỉ hướng dẫn cài UEFI thôi nên yêu cầu ổ cứng của bạn sẽ ở dạng GPT. <strong>macOS yêu cần có phân vùng EFI &gt;= 200MB</strong>, nếu không thì bạn sẽ không thể xóa phân vùng cài sang định dạng HFS hoặc APFS để cài. Do đó tùy vào trình trạng ổ cứng của bạn, sẽ các phương án sau:
+- Cài lên nguyên cả ổ cứng:
+ Bạn không cần chuẩn bị gì, tí nữa bạn sẽ xóa cả ổ cứng bằng disk utility như lúc làm usb vì nó chỉ chứa macOS. Nếu có sẵn hoặc cài lại windows lên ổ cứng khác yêu cầu dùng windows UEFI, clover sẽ không boot windows legacy được.
+- Cài macOS lên một phân vùng ổ cứng:
+  + Nếu bạn đang dùng Windows Legacy, ổ cứng dạng MBR thì tốt nhất bạn nên xóa cả ổ cứng để cài macOS trước rồi cài lại Windows UEFI sau. Bạn vẫn có thể tìm những cách khác để chuyển từ legacy sang uefi và hãy đảm bảo bạn tạo phân vùng EFI &gt;= 200MB.
+  + Nếu bạn đang có Windows UEFI và có phân vùng recovery 500MB và efi 100MB ở trước phân vùng win. Cần EFI 200MB nên bạn sẽ xóa phân vùng recovery và thêm vào EFI. Sau đó chia ra một phân vùng dành cho macOS, format NTFS và đặt tên cho nó (không đặt tên tí nữa nó không hiện trong disk utility). Hãy dùng <a href="https://www.partitionwizard.com/free-partition-manager.html">MiniTool Partition Wizzard</a> để thực hiện bước này.</p>
+
+<h2 id="boot-usb-và-cài-đặt">Boot USB và cài đặt</h2>
+
+<p>Hãy thực hiện các bước sau:</p>
+
+<ul>
+<li>Cắm usb vào, tốt nhất không cắm dây lan vào máy</li>
+<li>Bật nguồn và vào boot option, tùy main và hãng máy mà phím tắt khác nhau, nó có hiển thị trên màn hình lúc mới bật hoặc bạn có thể hỏi google</li>
+<li>Chọn USB của bạn trong danh sách (hãy chọn cái boot mà có chữ UEFI đứng trước cái tên USB)</li>
+<li>Clover sẽ khởi động, bạn hãy di chuyển trái phải và chọn <strong>Boot macOS Install from install_osx</strong> (mình đặt lại tên là vì chọn cái này cho dễ hướng dẫn, vì có nhiều phiên bản macOS)</li>
+<li>Chờ đợi cho một màn hình đen toàn chữ chạy, và cảm nhận mình như một <strong>hacker</strong>
+
+<ul>
+<li>Nếu bạn bị dừng ở chỗ nào đó và kèm theo một màn hình đen với một vòng tròn gạch chéo thì xin chia buồn bạn đã bị panic. Cần chỉnh sửa lại clover hoặc bios.</li>
+<li>Nếu bị panic bạn hãy cố chụp lại lỗi và đăng lên group hỏi. Bạn nên thử lại bằng cổng usb khác hoặc thay usb tạo lại bộ cài hoặc xem xét lại bios kĩ trước khi hỏi.</li>
+</ul></li>
+<li>Sau khi màn hình chữ chạy xong tiếp đó là logo Apple và thanh loading thì chúc mừng bạn đã boot vào được bộ cài.
+<img src="/img/hackintosh/install/lang.png" alt="lang" /></li>
+<li>Chọn <strong>Disk Utility</strong>
+<img src="/img/hackintosh/install/usb-disk-utility.png" alt="USB Install" /></li>
+<li>Giờ đến lúc xóa ổ cứng hoặc phân vùn để cài macOS, đặt tên thế nào là tùy bạn (ở đây mình đặt nó là &ldquo;macOS&rdquo;)
+
+<ul>
+<li>Nếu bạn sạch cả ổ cứng thì hãy chọn View -&gt; Show All Devices -&gt; chọn tên ổ cứng của bạn ở cột bên trái -&gt; Erase -&gt; lựa chọn như hình sau rồi chọn Erase
+<img src="/img/hackintosh/install/erase-disk.png" alt="Erase Disk" /></li>
+<li>Nếu bạn chỉ xóa phân vùng ổ cứng đã chuẩn bị (cần efi &gt;= 200MB mới xóa theo cách này được) thì chọn tên phân vùng bạn đã chọn ở cột bên trái -&gt; Erase -&gt; lựa chọn như hình sau rồi chọn Erase
+<img src="/img/hackintosh/install/erase-partition.png" alt="Erase Partition" /></li>
+</ul></li>
+<li>Xóa xong rồi thì đóng disk-utility lại (bấm nút đỏ trên góc)</li>
+<li>Quay trở lại màn hình cũ, giờ bạn chọn <strong>Install macOS</strong></li>
+<li>Chọn Continue cho đến khi nào ra cái màn hình chọn phân vùng cài, lúc này bạn chọn phân vùng tên là macOS (nếu đặt tên khác thì chọn tên đó), chọn Continue và quá trình cài sẽ bắt đầu.</li>
+<li>Chờ đợi khoảng 15-30 phút, tùy vào tốc độ ổ cứng của bạn.</li>
+</ul>
+
+<h2 id="boot-macos-trên-ổ-cứng-lần-đầu">Boot macOS trên ổ cứng lần đầu</h2>
+
+<ul>
+<li>Sau khi cài đặt xong máy sẽ tự khởi động lại, bạn chú ý sẽ phải vào boot vào usb trước rồi mới boot được macOS từ ổ cứng.</li>
+<li>Di chuyển trái phải chọn ổ có tên là <strong>Boot macOS from macOS</strong>, macOS là tên mình đặt, bạn đặt tên khác thì chọn Boot <strong>macOS from &lt;tên bạn đặt&gt;</strong></li>
+<li>Chờ màn hình toàn chữ chạy đến cái màn hình loading</li>
+<li>Làm theo hình cho dễ</li>
+</ul>
+
+<p><img src="/img/hackintosh/install/1.png" alt="1" />
+  <img src="/img/hackintosh/install/2.png" alt="1" />
+  <img src="/img/hackintosh/install/3.png" alt="1" />
+  <img src="/img/hackintosh/install/4.png" alt="1" />
+  <img src="/img/hackintosh/install/5.png" alt="1" />
+  <img src="/img/hackintosh/install/6.png" alt="1" />
+  <img src="/img/hackintosh/install/7.png" alt="1" />
+  <img src="/img/hackintosh/install/8.png" alt="1" />
+  <img src="/img/hackintosh/install/9.png" alt="1" />
+  <img src="/img/hackintosh/install/10.png" alt="1" />
+  <img src="/img/hackintosh/install/11.png" alt="1" /></p>
+
+<h2 id="những-việc-cần-làm-sau-cài-đặt-lên-ổ-cứng">Những việc cần làm sau cài đặt lên ổ cứng</h2>
+
+<p>Như vậy là đã xong quá trình cài đặt vào ổ cứng. Tiếp theo cần phải làm một số việc để mac có thể chạy ổn định. Mình sẽ viết bài sau.
+  + Cài đặt clover lên ổ cứng và chỉnh sửa
+  + Đối với card NVIDIA dòng Maxwell và bạn cần cài đặt web driver nhận card rời.
+  + Thêm các kext cần thiết và chỉnh sửa config
+  + Patch DSDT/SSDT, bắt buộc đối với laptop, PC có thể không cần patch toàn bộ nhưng ít nhất bạn cần patch cổng usb.</p>
+
+<p><strong>Nếu bạn cảm thấy bài viết hay và có ích hãy ủng hộ star github và donate để mình có thêm động lực viết bài.</strong></p>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Tìm kiếm</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Tìm kiếm">
+                <input type="hidden" name="sitesearch" value="https://vnohackintosh.com">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="https://vnohackintosh.comcategories/hackintosh">hackintosh (15)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/aida64"><i class="fas fa-tags"></i> aida64</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/applealc"><i class="fas fa-tags"></i> applealc</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/audio"><i class="fas fa-tags"></i> audio</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/bios"><i class="fas fa-tags"></i> bios</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/boot"><i class="fas fa-tags"></i> boot</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/clover"><i class="fas fa-tags"></i> clover</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/efi"><i class="fas fa-tags"></i> efi</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/hackintosh"><i class="fas fa-tags"></i> hackintosh</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/hardware"><i class="fas fa-tags"></i> hardware</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/install"><i class="fas fa-tags"></i> install</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/installer"><i class="fas fa-tags"></i> installer</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/intro"><i class="fas fa-tags"></i> intro</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/knowledge"><i class="fas fa-tags"></i> knowledge</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/macos"><i class="fas fa-tags"></i> macos</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/newbie"><i class="fas fa-tags"></i> newbie</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/nvidia"><i class="fas fa-tags"></i> nvidia</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/post-install"><i class="fas fa-tags"></i> post-install</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/setup"><i class="fas fa-tags"></i> setup</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/usb"><i class="fas fa-tags"></i> usb</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/vmware"><i class="fas fa-tags"></i> vmware</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/web-driver"><i class="fas fa-tags"></i> web-driver</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>Về chúng tôi</h4>
+
+            Chúng tôi chia sẻ và cài đặt hackintosh cho mọi người
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc4.jpg" class="img-responsive" alt="Quy trình cài đặt Hackintosh dành cho người mới">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/">Quy trình cài đặt Hackintosh dành cho người mới</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc1.jpg" class="img-responsive" alt="Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/">Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc4.jpg" class="img-responsive" alt="Tạo bộ cài hackintosh dễ dàng nhất trên Windows">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/">Tạo bộ cài hackintosh dễ dàng nhất trên Windows</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Liên hệ</h4>
+
+            <strong>Nguyễn Văn Hùng</strong>
+        <br>Làng đại học
+        <br>Linh Trung
+        <br>Thủ Đức
+        <br>Hồ Chí Minh
+        <br>Viet Nam
+
+            <a href="/contact" class="btn btn-small btn-template-main">Liên hệ</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, VNOHackintosh; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCF8fSq3jn5JL0MyHiVeB9zDG6srl-Ppaw&v=3.exp"></script>
+
+<script src="https://vnohackintosh.comjs/hpneo.gmaps.js"></script>
+<script src="https://vnohackintosh.comjs/gmaps.init.js"></script>
+<script src="https://vnohackintosh.comjs/front.js"></script>
+
+
+<script src="https://vnohackintosh.comjs/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

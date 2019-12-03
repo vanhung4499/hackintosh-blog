@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmware on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/vmware/</link>
+    <description>Recent content in vmware on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tạo máy ảo macOS trên Windows</title>
+      <link>https://vnohackintosh.com/blog/2019/04/19/tao-may-ao-mac-os/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/19/tao-may-ao-mac-os/</guid>
+      <description>Tạo máy ảo để bạn có thể tạo bộ cài hackintosh và trải nghiệm qua macOS và quá trình cài. Lúc cài hackintosh cũng sẽ tương tự như cài máy ảo nhưng mà về mặt trải nghiệm thì hackintosh sẽ hơn hẳn máy ảo. Nếu bạn có real mac hay máy hackintosh khác thì hãy bỏ qua bài này.
+Trên internet đã có nhiều bài viết, video hướng dẫn tạo máy ảo macOS rồi nên mình xin trích dẫn bài viết của anh DuongTH (một người có rất nhiều kinh nghiệm về hackintosh).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Tạo usb cài đặt hackintosh trên macOS</title>
+  <meta name="author" content="vanhung4499" />
+  
+  
+  
+  
+  <meta name="keywords" content="vanhung4499, hackintosh, macOS, usb, boot, installer">
+  
+  
+  <meta name="description" content="Dịch vụ và chia sẻ hackintosh">
+
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.turquoise.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="https://vnohackintosh.com/index.xml" type="application/rss+xml" title="VNOHackintosh">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="VNOHackintosh">
+  <meta property="og:title" content="Tạo usb cài đặt hackintosh trên macOS">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/" />
+  <meta property="og:description" content="Dịch vụ và chia sẻ hackintosh">
+  <meta property="og:image" content="https://vnohackintosh.com/img/banners/hackintosh-laptop2.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  
+  
+  
+    <meta property="og:image:width" content="2048">
+    <meta property="og:image:height" content="1536">
+  
+  
+  <meta property="og:updated_time" content="2019-04-20T00:00:00Z">
+  
+    <meta property="article:publisher" content="https://www.facebook.com/https://www.facebook.com/vnohackintosh/">
+    <meta property="article:author" content="https://www.facebook.com/Nguyen Van Hung/">
+    <meta property="article:section" content="hackintosh">
+    <meta property="article:tag" content="hackintosh">
+    <meta property="article:tag" content="usb">
+    <meta property="article:tag" content="boot">
+    <meta property="article:tag" content="installer">
+    
+    
+    <meta property="article:published_time" content="2019-04-20T00:00:00Z">
+    <meta property="article:modified_time" content="2019-04-20T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:title" content="Tạo usb cài đặt hackintosh trên macOS">
+  
+  <meta name="twitter:image" content="https://vnohackintosh.com/img/banners/hackintosh-laptop2.jpg">
+  
+  <meta name="twitter:description" content="Dịch vụ và chia sẻ hackintosh">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="https://vnohackintosh.com">
+                    
+                    
+                    <span class="sr-only">Tạo usb cài đặt hackintosh trên macOS - về trang chủ</span>
+                    <h1 class="logo-text">VNOHackintosh</h1>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown active">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Liên hệ</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Tạo usb cài đặt hackintosh trên macOS</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">April 20, 2019</p>
+
+                        <div id="post-content">
+                          
+
+<p>Bạn sẽ cần macOS để thực hiện tạo usb vanilla hackintosh. Ngoài ra vẫn có cách khác để tạo usb vanilla mà không cần đến macOS nhưng mà để hiểu và ít lỗi xảy ra hãy làm theo cách này. Những cách khác mình sẽ viết sau.</p>
+
+<h2 id="chuẩn-bị-bộ-cài-usb">Chuẩn bị bộ cài, USB</h2>
+
+<ul>
+<li>Bộ cài macOS gốc tải từ App Store:
+
+<ul>
+<li><a href="https://itunes.apple.com/ca/app/macos-high-sierra/id1246284741?mt=12">High Sierra 10.13.6</a></li>
+<li><a href="https://itunes.apple.com/us/app/macos-mojave/id1398502828?mt=12">Mojave mới nhất</a></li>
+</ul></li>
+<li>Thường thì tải từ App Store rất chậm ở Việt Nam, bạn có thể tham khảo thêm một số nguồn bộ cài bên ngoài nhưng có thể gây lỗi. Mình sẽ đưa ra một nguồn mà mình hay sử dụng và cảm thấy ổn là từ <a href="https://olarila.com">Olarila</a>, tải về giải nén và cho vào thư mục Applications:
+
+<ul>
+<li><a href="https://drive.google.com/file/d/1h5npjpj630TTZzrRl-g69JlWtLmFxQA8/view">High Sierra 10.13.6 17G2208</a> (Bản này nhận native cpu coffeelake)</li>
+<li><a href="https://drive.google.com/file/d/1dNDz9sGe1wuvNMKzjklwBUKO1Iq4AI63/view">High Sierra 10.13.6 17G65</a></li>
+<li><a href="https://drive.google.com/file/d/1HN_4cVHo1Is9JuB2l8pkfiCGjWgtt_vT/view">Mojave 10.14.5 18F132</a></li>
+</ul></li>
+<li>Trong blog này mình sẽ chỉ hướng dẫn về cài các bản 10.13.6 hoặc 10.14.x thôi do một số kext quan trọng ngưng support các bản cũ hơn. Hãy chắc chắn rằng bạn đã có bộ cài trong thư mục Applications để thực hiện các bước tiếp theo.</li>
+</ul>
+
+<h2 id="format-usb">Format USB</h2>
+
+<p>Có 2 cách format usb bạn thích cách nào thì lam cách đó. Cả 2 cách sẽ tự động tạo ra phân vùng EFI 200MB.</p>
+
+<h3 id="dùng-disk-utility">Dùng Disk Utility</h3>
+
+<ol>
+<li>Cắm USB vào. Nếu bạn dùng máy ảo VMWare thì nếu usb không kết nối thì làm như sau: chọn VM ở trên thanh công cụ -&gt; Removable Device -&gt; chọn tên USB của bạn -&gt; Connect</li>
+<li>Mở app Disk Utility</li>
+
+<li><p>Chọn View -&gt; Show all devices
+<img src="/img/hackintosh/disk-utility/show.png" alt="show all devices" /></p></li>
+
+<li><p>Chọn USB của bạn ở cột bên trái rồi chọn erase
+<img src="/img/hackintosh/disk-utility/usb.png" alt="show all devices" /></p></li>
+
+<li><p>Sửa các lựa chọn như sau</p>
+
+<ul>
+<li>Name: install_osx</li>
+<li>Format: Mac OS Extended (Journaled)</li>
+<li>Scheme: GUID Partition Map</li>
+</ul></li>
+</ol>
+
+<p><img src="/img/hackintosh/disk-utility/erase.png" alt="show all devices" /></p>
+
+<ol>
+<li>Chọn <strong>Erase</strong></li>
+</ol>
+
+<h3 id="dùng-command-line">Dùng Command line</h3>
+
+<ol>
+<li>Mở Terminal lên</li>
+
+<li><p>Dùng lệnh sau:</p>
+
+<pre><code class="language-bash">diskutil list
+</code></pre></li>
+
+<li><p>Nhìn vào Terminal rồi xác định đường dẫn của usb, trong trường hợp của mình là <strong>/dev/disk2</strong>
+<img src="/img/hackintosh/terminal/usb.png" alt="terminal" /></p></li>
+
+<li><p>Chạy lệnh sau để xóa usb, hãy thay thế /dev/disk2 bằng dẫn đến usb của bạn.</p>
+
+<pre><code class="language-bash">diskutil partitionDisk /dev/disk2 1 GPT HFS+J &quot;install_osx&quot; R
+</code></pre></li>
+</ol>
+
+<h2 id="tích-hợp-bộ-cài-vào-usb">Tích hợp bộ cài vào USB</h2>
+
+<p>Có 2 cách để copy bộ cài vào usb:
+  - <strong>Createinstallmedia:</strong> đề nghị sử dụng cách này vì nó khá đơn giản và cũng rất ít khi xảy ra lỗi. Đây cũng là cách tạo usb cài macOS cho real mac.
+  - <strong>BaseBinaries:</strong> cách này sẽ tạo ra usb dạng recovery và nó khá phức tạp, chỉ nên sử dụng khi cách bên trên không dùng được. Cách này không sử dụng được đối với High Sierra, Mojave và các bản cao hơn nên mình sẽ không đề cập đến. Nhưng mình cũng không hiểu sao Olarila images lại dùng cách này được.</p>
+
+<h3 id="createinstallmedia">Createinstallmedia</h3>
+
+<p>Mở Terminal lên và chạy các lệnh sau:
+  - Đối với Mojave:</p>
+
+<pre><code class="language-bash">  # copy installer image
+  sudo &quot;/Applications/Install macOS Mojave.app/Contents/Resources/createinstallmedia&quot; --volume  /Volumes/install_osx --nointeraction
+</code></pre>
+
+<p>Nhập password và đợi nó chạy xong khoảng 20-30 phút tùy vào tốc độ usb của bạn. Lưu ý trong terminal nhập password nó không hiện gì cả bạn cứ nhập xong rồi ấn enter thôi. Sau đó đổi tên USB cho dễ sử dụng:</p>
+
+<pre><code class="language-bash">  # rename
+  sudo diskutil rename &quot;Install macOS Mojave&quot; install_osx
+</code></pre>
+
+<ul>
+<li><p>Tương tự đối với High Sierra:</p>
+
+<pre><code class="language-bash"># copy installer image
+sudo &quot;/Applications/Install macOS High Sierra.app/Contents/Resources/createinstallmedia&quot; --volume  /Volumes/install_osx --nointeraction
+# rename
+sudo diskutil rename &quot;Install macOS High Sierra&quot; install_osx
+</code></pre></li>
+</ul>
+
+<h2 id="cài-đặt-và-chỉnh-sửa-clover-vào-usb">Cài đặt và chỉnh sửa Clover vào USB</h2>
+
+<h3 id="clover-installer">Clover installer</h3>
+
+<p>Mình sẽ chỉ hướng dẫn Clover UEFI, Clover Legacy sẽ không được support ở trong blog này.</p>
+
+<p>Download Clover installer, nên dùng bản mới nhất:
+  <a href="https://sourceforge.net/projects/cloverefiboot/">https://sourceforge.net/projects/cloverefiboot/</a></p>
+
+<p>Chạy Clover installer và làm theo các bước sau.
+  1. Chọn Continue -&gt; Continue -&gt; Continue để qua mấy cái bước thủ tục
+  2. Chọn &ldquo;Change Install Location&rdquo; -&gt; chọn đích đến là cái usb, &ldquo;install_osx&rdquo; (lúc nãy mình đã sửa tên) -&gt; Continue
+  3. Chọn Customize và tích các mục sau:
+    - Tích &ldquo;Install for UEFI booting only&rdquo;, &ldquo;Install Clover in the ESP&rdquo; sẽ tự động được tích lên.
+    - Tích &ldquo;Black Green Moody&rdquo; trong mục Themes (đây là theme mình hay dùng, bạn có thể dùng theme khác và chỉnh sửa trong config.plist)
+    - Mục UEFI Drivers tích như ảnh sau:
+    <img src="/img/hackintosh/clover/uefi-driver.png" alt="clover installer" />
+  4. Chọn Intsall.</p>
+
+<p>Sau khi clover installer chạy xong nó sẽ mount efi của usb ra luôn. Bạn sẽ thấy xuất hiện ổ EFI ở trong finder và desktop. Cuối cùng cần thêm một efi driver không có sẵn trong clover installer là HFSPlus.efi, nếu không có nó thì khi boot vào clover sẽ không thấy bộ cài đâu cả:
+  - Download: <a href="https://github.com/JrCs/CloverGrowerPro/raw/master/Files/HFSPlus/X64/HFSPlus.efi">HFSPlus.efi</a>
+  - Copy nó đến /EFI/Clover/drivers64UEFI</p>
+
+<p><strong>Lưu ý:</strong>
+  - Trong số ít trường hợp HFSPlus.efi gây lỗi không boot được lúc này bạn có thể dùng VBoxHfs-64.efi thay thế có sẵn trong clover installer. Không được để cả 2 một chỗ nếu không sẽ gây xung đột.
+  - Trong nhiều trường hợp boot vào bộ cài bị đứng ở chỗ những dòng lệnh đầu thì có thể đó là lỗi của AptioMemoryFix-64.efi, hãy thay thế nó bằng OsxAptioFixDrv-64.efi hoặc OsxAptioFix3Drv-64.efi có sẵn trong clover installer.
+  - Đối với PC main MSI thì hã sử dụng OsxAptioFix2drv-free2000.efi thay cho AptioMemoryFix-64.efi. <a href="http://hackintosher.com/wp-content/uploads/2017/07/OsxAptioFix2Drv-free2000.efi_.zip">Dowload</a></p>
+
+<h3 id="kexts">Kexts</h3>
+
+<p>Hãy xóa tất cả các thư mục trong EFI/CLOVER/kexts/ chỉ để lại thư mục Other. Để mình giải thích kext trong Other sẽ được load ở tất cả các bản mac và recovery, còn các thư mục 10.x thì nó sẽ chỉ load kext trong đó nếu bạn boot các phiên bản macOS tương ứng.</p>
+
+<p><strong>Các kext cần thiết cho usb bộ cài hackintosh</strong>
+  Hãy tải kext phiên bản mới nhất
+  - <strong>FakeSMC.kext</strong>: Đây là kext quan trọng nhất đối với hackintosh, nó giúp giả lập các key SMC, giúp đọc thông tin từ các cảm biến trong máy. <a href="https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/">Download</a>
+  - <strong>VoodooPS2Controller.kext</strong>: Kext dành cho bàn phím, chuột và trackpad PS2. <a href="https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/">Download</a>
+  - <strong>Lilu</strong>: là kext hỗ trợ patch on-the-fly kext hệ thống của macOS mà không chỉnh sửa trực tiếp. Đây là kext đã làm cho việc hackintosh hiện tại dễ hơn rất nhiều so với trước kia. <a href="https://github.com/acidanthera/Lilu/releases">Download</a>
+  - <strong>Whatevergreen</strong>: Là plugin của Lilu, kext all in one để giải quyết vấn đề về graphics, card rời AMD, NVIDIA hay card onboard Intel HD Graphics chỉ cần nó là đủ. <a href="https://github.com/acidanthera/WhateverGreen/releases">Download</a>
+  - <strong>Ethernet Kexts</strong>:
+    + <strong>IntelMausiEthernet.kext</strong> hoạt động với đa số Intel LAN. <a href="https://bitbucket.org/RehabMan/os-x-intel-network/downloads/">Download</a>
+    + <strong>AtherosE2200Ethernet.kext</strong> hoạt động với đa số Atheros hoặc Killer Ethernet. Đa số laptop MSI dùng kext này. <a href="https://github.com/Mieze/AtherosE2200Ethernet/releases">Download</a>
+    + <strong>RealtekRTL8111.kext</strong> hoạt động với đa số Realtek LAN. <a href="https://bitbucket.org/RehabMan/os-x-realtek-network/downloads/">Download</a>
+    + <strong>RealtekRTL8100.kext</strong> dành cho dòng Realtek RTL810x Fast Ethernet <a href="https://www.insanelymac.com/forum/files/file/259-realtekrtl8100-binary/">Download</a>
+  Mình thường dùng cả bốn kext này trong clover vì mình cài nhiều máy nên để sẵn trong đó cả đỡ mất công thay.
+  - <strong>USBInjectAll.kext</strong>: kext fix cổng USB 3.0, đa số main pc và laptop đều sử dụng kext này. <a href="https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/">Download</a>
+  - <strong>Kext ít khi phải dùng</strong>: <a href="https://github.com/RehabMan/hack-tools/archive/master.zip">Download</a>
+    + <strong>XHCI-unsupported.kext</strong>: đi kèm với USBInjectAll dành cho một số ít main đặc biệt như X79/X99/X299/X399, &hellip; mà USBInjectAll.kext không hỗ trợ.
+    + <strong>SATA-unsupported.kext</strong>: dành cho pc hay laptop sử dụng cpu skylake trở đi mà sata controller/chipset Apple không hỗ trợ. Nói chung không boot bật Disk Utility mà không thấy ổ cứng đâu thì là thiếu kext này.</p>
+
+<p><strong>Cho tất cả các kext cần thiết vào thư mục /EFI/CLOVER/Kexts/Other</strong>. Đây là kext trong clover usb mình sử dụng:
+  <img src="/img/hackintosh/clover/kexts.png" alt="clover kexts" /></p>
+
+<h3 id="config">Config</h3>
+
+<p>Cần phải chỉnh sửa config.plist để có thể boot vào macOS. Mình sẽ không giải thích quá nhiều về các lựa chọn trong config.plist vì nó quá nhiều bạn nào muốn biết rõ mấy cái này hãy vào và đọc ở <a href="https://clover-wiki.zetam.org/">Clover Wiki</a>.</p>
+
+<p>Bạn cần có phần mềm để chỉnh sửa config.plist, có thể sử dụng <a href="https://mackie100projects.altervista.org/download-clover-configurator/">Clover Configurator</a>, <a href="https://itunes.apple.com/vn/app/xcode/id497799835?mt=12">Xcode</a>, <a href="https://www.fatcatsoftware.com/plisteditpro/">PlistEdit Pro</a></p>
+
+<p>Mình sẽ chia ra 2 phần chính dành cho PC và laptop:
+  - <strong>Đối với Laptop</strong></p>
+
+<pre><code>Đa số laptop đều sẽ không nhận card rời nên sẽ chủ yếu dùng card onboard. Mình khuyến nghị sử dụng config của __RehabMan__ làm sẵn ở đây: [https://github.com/RehabMan/OS-X-Clover-Laptop-Config](https://github.com/RehabMan/OS-X-Clover-Laptop-Config).
+
+Hãy download toàn bộ repos bằng link sau: [https://github.com/RehabMan/OS-X-Clover-Laptop-Config/archive/master.zip](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/archive/master.zip)
+
+![Rehabman Config](/img/hackintosh/finder/rehabman-config.png)
+
+Trong repos có nhiều file config tương ứng với các dòng HD Graphics, bạn chọn đúng config với HD Graphics của máy. Sau đó copy nó đến /EFI/CLOVER và thay thế file config hiện có. Hãy chắc rằng bạn đã sửa tên nó thành &quot;config.plist&quot;.
+</code></pre>
+
+<ul>
+<li><p><strong>Đối với PC</strong></p>
+
+<p>PC có thể dùng được các loại card rời và cả card onboard. Vấn đề là PC không có kho config chuẩn giống rehabman làm cho laptop nên mình đã làm và chỉnh sửa lại cho PC để đảm bảo có thể boot và dùng ổn định. Config do mình làm được tham khảo từ <a href="https://olarila.com/forum/">Olarila</a>, <a href="https://hackintosh.gitbook.io/">Hackintosh Vanilla</a> và <a href="https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen/">
+Intel Framebuffer patching using WhateverGreen</a>. Config này mình cài dịch vụ kha khá máy đều ổn, có thể nó chưa chuẩn các bạn có thể góp ý qua group facebook hoặc github. Mình sẽ chia ra làm hai loại:</p>
+
+<ul>
+<li><p>PC dùng card rời: sẽ không cần chỉnh sửa config về phần graphic, tất cả sẽ do WhateverGreen lo. Download và lựa chọn config tương ứng ở đây <a href="https://drive.google.com/file/d/1qf-LRMqjc-GlHpOoHISgehwCoqEJvSID/view?usp=sharing">kirito4499 config dgpu</a>.</p></li>
+
+<li><p>PC dùng Intel HD Graphics, sẽ khó làm hơn và nên chỉnh sửa phần config để nhận được card onboard. Mình đã chỉnh sửa sẵn bạn tải và lựa chọn ở đây <a href="https://drive.google.com/file/d/1MoTYVXzAlBykJZrFRiGK7H_L6cInZLfj/view?usp=sharing">kirito4499 config igpu</a>.</p></li>
+</ul>
+
+<p>Chọn được file rồi thì bạn copy nó đến /EFI/CLOVER/ và sửa tên thành &ldquo;config.plist&rdquo;.</p>
+
+<p><strong>Lưu ý</strong>: Nếu bạn không boot được với config của mình hãy vào <a href="https://www.facebook.com/groups/hackintoshPC/">group facebook</a> để hỏi, mình sẽ support ở kênh này, các bạn đừng gọi điện hay nhắn tin.</p></li>
+</ul>
+
+<h2 id="tổng-kết">Tổng kết</h2>
+
+<p>Trên đây mình đã hướng dẫn các bạn tạo usb hackintosh sạch. Ngoài ra có một số cách tạo usb nhanh hơn không cần macOS mình sẽ viết bài sau. Tiếp theo là setup bios và tiến hành cài đặt.</p>
+
+<p>Bài viết được tham khảo từ các nguồn sau:
+  - <a href="https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/">https://www.tonymacx86.com/threads/guide-booting-the-os-x-installer-on-laptops-with-clover.148093/</a>
+  - <a href="https://hackintosh.gitbook.io">https://hackintosh.gitbook.io</a></p>
+
+<p>Chân thành cảm ơn đến Rehabman, Corpnewt, Olarila team, Acidanthera team và nhiều người khác đã viết kext, guide và chia sẻ hackintosh.</p>
+
+<p><strong>Nếu bạn cảm thấy bài viết hay và có ích hãy donate cho mình có thêm động lực viết bài.</strong></p>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Tìm kiếm</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Tìm kiếm">
+                <input type="hidden" name="sitesearch" value="https://vnohackintosh.com">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="https://vnohackintosh.comcategories/hackintosh">hackintosh (15)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/aida64"><i class="fas fa-tags"></i> aida64</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/applealc"><i class="fas fa-tags"></i> applealc</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/audio"><i class="fas fa-tags"></i> audio</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/bios"><i class="fas fa-tags"></i> bios</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/boot"><i class="fas fa-tags"></i> boot</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/clover"><i class="fas fa-tags"></i> clover</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/efi"><i class="fas fa-tags"></i> efi</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/hackintosh"><i class="fas fa-tags"></i> hackintosh</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/hardware"><i class="fas fa-tags"></i> hardware</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/install"><i class="fas fa-tags"></i> install</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/installer"><i class="fas fa-tags"></i> installer</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/intro"><i class="fas fa-tags"></i> intro</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/knowledge"><i class="fas fa-tags"></i> knowledge</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/macos"><i class="fas fa-tags"></i> macos</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/newbie"><i class="fas fa-tags"></i> newbie</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/nvidia"><i class="fas fa-tags"></i> nvidia</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/post-install"><i class="fas fa-tags"></i> post-install</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/setup"><i class="fas fa-tags"></i> setup</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/usb"><i class="fas fa-tags"></i> usb</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/vmware"><i class="fas fa-tags"></i> vmware</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/web-driver"><i class="fas fa-tags"></i> web-driver</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>Về chúng tôi</h4>
+
+            Chúng tôi chia sẻ và cài đặt hackintosh cho mọi người
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc4.jpg" class="img-responsive" alt="Quy trình cài đặt Hackintosh dành cho người mới">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/">Quy trình cài đặt Hackintosh dành cho người mới</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc1.jpg" class="img-responsive" alt="Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/">Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc4.jpg" class="img-responsive" alt="Tạo bộ cài hackintosh dễ dàng nhất trên Windows">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/">Tạo bộ cài hackintosh dễ dàng nhất trên Windows</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Liên hệ</h4>
+
+            <strong>Nguyễn Văn Hùng</strong>
+        <br>Làng đại học
+        <br>Linh Trung
+        <br>Thủ Đức
+        <br>Hồ Chí Minh
+        <br>Viet Nam
+
+            <a href="/contact" class="btn btn-small btn-template-main">Liên hệ</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, VNOHackintosh; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCF8fSq3jn5JL0MyHiVeB9zDG6srl-Ppaw&v=3.exp"></script>
+
+<script src="https://vnohackintosh.comjs/hpneo.gmaps.js"></script>
+<script src="https://vnohackintosh.comjs/gmaps.init.js"></script>
+<script src="https://vnohackintosh.comjs/front.js"></script>
+
+
+<script src="https://vnohackintosh.comjs/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

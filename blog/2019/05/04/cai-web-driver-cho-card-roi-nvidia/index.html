@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Cài Web Driver cho card rời NVIDIA</title>
+  <meta name="author" content="vanhung4499" />
+  
+  
+  
+  
+  <meta name="keywords" content="vanhung4499, hackintosh, macOS, nvidia, web driver">
+  
+  
+  <meta name="description" content="Dịch vụ và chia sẻ hackintosh">
+
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.turquoise.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="https://vnohackintosh.com/index.xml" type="application/rss+xml" title="VNOHackintosh">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="en_us">
+  <meta property="og:site_name" content="VNOHackintosh">
+  <meta property="og:title" content="Cài Web Driver cho card rời NVIDIA">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vnohackintosh.com/blog/2019/05/04/cai-web-driver-cho-card-roi-nvidia/" />
+  <meta property="og:description" content="Dịch vụ và chia sẻ hackintosh">
+  <meta property="og:image" content="https://vnohackintosh.com/img/banners/hackintosh-pc5.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  
+  
+  
+    <meta property="og:image:width" content="4032">
+    <meta property="og:image:height" content="3024">
+  
+  
+  <meta property="og:updated_time" content="2019-05-04T00:00:00Z">
+  
+    <meta property="article:publisher" content="https://www.facebook.com/https://www.facebook.com/vnohackintosh/">
+    <meta property="article:author" content="https://www.facebook.com/Nguyen Van Hung/">
+    <meta property="article:section" content="hackintosh">
+    <meta property="article:tag" content="hackintosh">
+    <meta property="article:tag" content="nvidia">
+    <meta property="article:tag" content="web driver">
+    
+    
+    <meta property="article:published_time" content="2019-05-04T00:00:00Z">
+    <meta property="article:modified_time" content="2019-05-04T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <meta name="twitter:title" content="Cài Web Driver cho card rời NVIDIA">
+  
+  <meta name="twitter:image" content="https://vnohackintosh.com/img/banners/hackintosh-pc5.jpg">
+  
+  <meta name="twitter:description" content="Dịch vụ và chia sẻ hackintosh">
+  
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="https://vnohackintosh.com">
+                    
+                    
+                    <span class="sr-only">Cài Web Driver cho card rời NVIDIA - về trang chủ</span>
+                    <h1 class="logo-text">VNOHackintosh</h1>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown active">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Liên hệ</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Cài Web Driver cho card rời NVIDIA</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">May 4, 2019</p>
+
+                        <div id="post-content">
+                          
+
+<h2 id="giới-thiệu">Giới thiệu</h2>
+
+<ul>
+<li>Đối với những máy dùng card rời NVIDIA dòng Maxwell và Pascal thì lúc mới cài máy sẽ chưa nhận card và sẽ rất lag, cần phải cài web driver vào thì máy mới nhận card rời.</li>
+<li>Cụ thể thì là những card sau
+
+<ul>
+<li>NVIDIA Pascal: GeForce GTX 1030, 1050, 1050 Ti, 1060, 1070, 1070 Ti, 1080, 1080 Ti, TITAN Pascal và TITAN Xp</li>
+<li>NVIDIA Maxwell: GeForce GTX 750, 750 Ti, 950, 960, 970, 980, 980 Ti, and TITAN X</li>
+</ul></li>
+<li>Dòng card NVIDIA RTX mới ra hiện chưa có web driver nên chưa thể dùng cho hackintosh.</li>
+<li>Chưa có Web Driver cho Mojave nên chỉ chỉ dừng lại ở High Sierra 10.13.6 không được update lên.</li>
+<li>Dòng card NVIDIA Kelper sẽ chạy native với kext của Apple nên không cần cài web driver và có thể cài Mojave.</li>
+</ul>
+
+<h2 id="yêu-cầu">Yêu cầu</h2>
+
+<ul>
+<li>Cần có <strong>Lilu + Whatevergreen</strong> trong Clover/kexts/Other</li>
+<li>Nếu làm theo hướng dẫn của mình thì đã có sẵn</li>
+</ul>
+
+<h2 id="cài-nvidia-web-driver">Cài NVIDIA Web Driver</h2>
+
+<p><strong>Mình sẽ giới thiệu hai cách cài cho các bạn tham khảo</strong></p>
+
+<h3 id="dùng-bộ-cài-từ-nvidia">Dùng bộ cài từ NVIDIA</h3>
+
+<ul>
+<li><p>Kiểm tra build version của macOS đang dùng. Mở Terminal lên và chạy lệnh sau:</p>
+
+<pre><code class="language-bash">sw_vers
+</code></pre></li>
+</ul>
+
+<p><img src="/assets/images/hackintosh/webdrv/build-version.png" alt="build" /></p>
+
+<ul>
+<li><p>Download bộ cài Web Driver đặt phù hợp</p></li>
+
+<li><p>Danh sách các phiên bản web driver đã được tổng hợp. Bạn có thể download từ các nguồn sau:</p>
+
+<ul>
+<li><strong>tonymacx86</strong>: <a href="https://www.tonymacx86.com/nvidia-drivers/">https://www.tonymacx86.com/nvidia-drivers/</a></li>
+<li><strong>InsanelyMac</strong>: <a href="https://www.insanelymac.com/forum/topic/324195-nvidia-web-driver-updates-for-macos-high-sierra-update-apr-02-2019/">https://www.insanelymac.com/forum/topic/324195-nvidia-web-driver-updates-for-macos-high-sierra-update-apr-02-2019/</a></li>
+</ul></li>
+
+<li><p>Download phiên bản web driver phù hợp với build version macOS của bạn</p></li>
+
+<li><p>Chạy bộ cài web drvier (ảnh chỉ mang tính chất minh họa)</p></li>
+</ul>
+
+<p><img src="/assets/images/hackintosh/webdrv/webdrv.png" alt="webdrv" /></p>
+
+<ul>
+<li>Web Driver sẽ báo restart thì bạn đừng restart vội, còn cần chỉnh config.plist nữa.</li>
+<li>Nếu không thấy bản web driver nào giống build version macOS thì hãy update macOS lên phiên bản phù hợp nhưng không được update lên Mojave hoặc thử cách phía dưới.</li>
+</ul>
+
+<h3 id="dùng-nvidia-update-script-của-benjamin-dobell">Dùng nvidia-update script của Benjamin-Dobell</h3>
+
+<ul>
+<li><p>Không cần làm gì nhiều chỉ mở Terminal lên và chạy lệnh sau</p>
+
+<pre><code class="language-bash">bash &lt;(curl -s https://raw.githubusercontent.com/Benjamin-Dobell/nvidia-update/master/nvidia-update.sh)
+</code></pre></li>
+
+<li><p>Link github của repository để ủng hộ tác giả: <a href="https://github.com/Benjamin-Dobell/nvidia-update">https://github.com/Benjamin-Dobell/nvidia-update</a></p></li>
+
+<li><p>Cách này cực dễ làm nhưng đôi lúc có thể lỗi, vẫn khuyến khích dùng cách bên trên. Nếu bạn dùng bộ cài từ olarila thì hãy dùng cách này.</p></li>
+</ul>
+
+<h2 id="chỉnh-sửa-config-plist">Chỉnh sửa config.plist</h2>
+
+<ul>
+<li>Đừng vội restart máy, hãy mount EFI ra và mở config.plist lên bằng Clover Configurator</li>
+<li>Chuyển qua tab <strong>Boot</strong> và thêm boot argument sau: <strong>nvda-drv=1</strong></li>
+</ul>
+
+<p><img src="/assets/images/hackintosh/webdrv/nvda-drv.png" alt="nvda-drv" /></p>
+
+<ul>
+<li>Chuyển qua tab <strong>System Parameters</strong> và tích <strong>NvidiaWeb</strong> lên</li>
+</ul>
+
+<p><img src="/assets/images/hackintosh/webdrv/nvidiaweb.png" alt="nvidiaweb" /></p>
+
+<ul>
+<li>Lưu config.plist lại và restart</li>
+</ul>
+
+<h2 id="tổng-kết">Tổng kết</h2>
+
+<p>Mình đã hướng dẫn cơ bản cách cài web driver. Đến đây gần như là PC đã có thể hoạt động ổn định.
+Để chơi hackintosh lâu dài thì bạn vẫn nên qua với team đỏ AMD.</p>
+
+<p>Cảm ơn NVIDIA, team Acidanthera, Benjamin Dobell và tất cả các lập trình viên đã viết kext và tool cho Hackintosh.</p>
+
+<p><strong>Nếu bạn cảm thấy bài viết hay và có ích hãy ủng hộ star github và donate để mình có thêm động lực viết bài.</strong></p>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Tìm kiếm</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Tìm kiếm">
+                <input type="hidden" name="sitesearch" value="https://vnohackintosh.com">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="https://vnohackintosh.comcategories/hackintosh">hackintosh (15)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/aida64"><i class="fas fa-tags"></i> aida64</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/applealc"><i class="fas fa-tags"></i> applealc</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/audio"><i class="fas fa-tags"></i> audio</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/bios"><i class="fas fa-tags"></i> bios</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/boot"><i class="fas fa-tags"></i> boot</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/clover"><i class="fas fa-tags"></i> clover</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/efi"><i class="fas fa-tags"></i> efi</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/hackintosh"><i class="fas fa-tags"></i> hackintosh</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/hardware"><i class="fas fa-tags"></i> hardware</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/install"><i class="fas fa-tags"></i> install</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/installer"><i class="fas fa-tags"></i> installer</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/intro"><i class="fas fa-tags"></i> intro</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/knowledge"><i class="fas fa-tags"></i> knowledge</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/macos"><i class="fas fa-tags"></i> macos</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/newbie"><i class="fas fa-tags"></i> newbie</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/nvidia"><i class="fas fa-tags"></i> nvidia</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/post-install"><i class="fas fa-tags"></i> post-install</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/setup"><i class="fas fa-tags"></i> setup</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/usb"><i class="fas fa-tags"></i> usb</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/vmware"><i class="fas fa-tags"></i> vmware</a>
+            </li>
+            
+            <li>
+                <a href="https://vnohackintosh.comtags/web-driver"><i class="fas fa-tags"></i> web-driver</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>Về chúng tôi</h4>
+
+            Chúng tôi chia sẻ và cài đặt hackintosh cho mọi người
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc4.jpg" class="img-responsive" alt="Quy trình cài đặt Hackintosh dành cho người mới">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/11/12/quy-trinh-cai-dat-hackintosh/">Quy trình cài đặt Hackintosh dành cho người mới</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc1.jpg" class="img-responsive" alt="Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/10/05/huong-dan-setup-bios-pc-chi-tiet/">Hướng dẫn setup bios chi tiết cho một số loại Mainboard PC</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/">
+                          
+                            <img src="https://vnohackintosh.comimg/banners/hackintosh-pc4.jpg" class="img-responsive" alt="Tạo bộ cài hackintosh dễ dàng nhất trên Windows">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://vnohackintosh.com/blog/2019/07/01/tao-bo-cai-hackintosh-tren-windows/">Tạo bộ cài hackintosh dễ dàng nhất trên Windows</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Liên hệ</h4>
+
+            <strong>Nguyễn Văn Hùng</strong>
+        <br>Làng đại học
+        <br>Linh Trung
+        <br>Thủ Đức
+        <br>Hồ Chí Minh
+        <br>Viet Nam
+
+            <a href="/contact" class="btn btn-small btn-template-main">Liên hệ</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, VNOHackintosh; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCF8fSq3jn5JL0MyHiVeB9zDG6srl-Ppaw&v=3.exp"></script>
+
+<script src="https://vnohackintosh.comjs/hpneo.gmaps.js"></script>
+<script src="https://vnohackintosh.comjs/gmaps.init.js"></script>
+<script src="https://vnohackintosh.comjs/front.js"></script>
+
+
+<script src="https://vnohackintosh.comjs/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

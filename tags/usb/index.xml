@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>usb on VNOHackintosh</title>
+    <link>https://vnohackintosh.com/tags/usb/</link>
+    <description>Recent content in usb on VNOHackintosh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vnohackintosh.com/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tạo usb cài đặt hackintosh trên macOS</title>
+      <link>https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vnohackintosh.com/blog/2019/04/20/tao-usb-cai-dat-hackintosh/</guid>
+      <description>Bạn sẽ cần macOS để thực hiện tạo usb vanilla hackintosh. Ngoài ra vẫn có cách khác để tạo usb vanilla mà không cần đến macOS nhưng mà để hiểu và ít lỗi xảy ra hãy làm theo cách này. Những cách khác mình sẽ viết sau.
+Chuẩn bị bộ cài, USB  Bộ cài macOS gốc tải từ App Store:  High Sierra 10.13.6 Mojave mới nhất  Thường thì tải từ App Store rất chậm ở Việt Nam, bạn có thể tham khảo thêm một số nguồn bộ cài bên ngoài nhưng có thể gây lỗi.</description>
+    </item>
+    
+  </channel>
+</rss>
